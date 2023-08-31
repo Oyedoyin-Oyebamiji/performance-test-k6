@@ -8,7 +8,7 @@ export let options = {
 };
 
 export default function () {
-  let url = "https://gigbridge-api-staging.herokuapp.com/api/login";
+  let url = "{{URL}}/api/login";
   let payload = JSON.stringify({
     // Your JSON payload data here
     "email": "test.divjot.worker@yopmail.com",

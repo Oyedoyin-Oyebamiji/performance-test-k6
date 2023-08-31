@@ -23,7 +23,7 @@ export let options = {
 };
 
 export default function () {
-  let url = "https://gigbridge-api-staging.herokuapp.com/api/company-signup";
+  let url = "{{URL}}/api/company-signup";
   let payload = JSON.stringify({
     // Your JSON payload data here
     first_name: "Gideon",

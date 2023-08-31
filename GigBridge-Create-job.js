@@ -8,7 +8,7 @@ export let options = {
 };
 
 export default function () {
-  let url = "https://gigbridge-api-staging.herokuapp.com/api/jobs";
+  let url = "{{URL}}/api/jobs";
   let payload = JSON.stringify({
     job_type_id: 10,
     job_role_id: 2,
@@ -40,7 +40,7 @@ export default function () {
   let headers = {
     "Content-Type": "application/json",
     Accept: "application/json",
-    Authorization: "Bearer 2480|j2xJOHSUzBUxDYA0ltHUDKmiilCn7nMD7stc23c5",
+    Authorization: "Bearer {{token}}",
   };
 
   let params = {

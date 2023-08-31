@@ -12,8 +12,8 @@ export let options = {
 };
 
 export default function () {
-  let signin_url = "https://gigbridge-api-staging.herokuapp.com/api/login";
-  let url = "https://gigbridge-api-staging.herokuapp.com/api/jobs-search?page=1&per_page=30";
+  let signin_url = "{{URL}}/api/login";
+  let url = "{{URL}}/api/jobs-search?page=1&per_page=30";
   let payload = JSON.stringify({
     email: "test.divjot.worker@yopmail.com",
     password: "Bridge@123",
